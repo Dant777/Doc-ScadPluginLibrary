@@ -1,0 +1,2161 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class Editor
+   </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class Editor
+   ">
+    <meta name="generator" content="docfx 2.59.0.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="EditorClasses.Editor">
+  
+  
+  <h1 id="EditorClasses_Editor" data-uid="EditorClasses.Editor" class="text-break">Class Editor
+  </h1>
+  <div class="markdown level0 summary"><p>Класс для задания исходных данных модели SCAD++
+(Создание узлов, элементов, задание нагрузок и тд.)</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><span class="xref">System.Object</span></div>
+    <div class="level1"><span class="xref">Editor</span></div>
+  </div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <span class="xref">System.Object.ToString()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ReferenceEquals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetHashCode()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetType()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.MemberwiseClone()</span>
+    </div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="EditorClasses.html">EditorClasses</a></h6>
+  <h6><strong>Assembly</strong>: ScadPluginLibrary.dll</h6>
+  <h5 id="EditorClasses_Editor_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class Editor</code></pre>
+  </div>
+  <h3 id="constructors">Constructors
+  </h3>
+  
+  
+  <a id="EditorClasses_Editor__ctor_" data-uid="EditorClasses.Editor.#ctor*"></a>
+  <h4 id="EditorClasses_Editor__ctor_System_Object_" data-uid="EditorClasses.Editor.#ctor(System.Object)">Editor(Object)</h4>
+  <div class="markdown level1 summary"><p>Класс для задания исходных данных модели SCAD++</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Editor(dynamic engine)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Object</span></td>
+        <td><span class="parametername">engine</span></td>
+        <td><p>Объект SCAD++, передаваемый через JScript</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="methods">Methods
+  </h3>
+  
+  
+  <a id="EditorClasses_Editor_ArmElemPlateAdd_" data-uid="EditorClasses.Editor.ArmElemPlateAdd*"></a>
+  <h4 id="EditorClasses_Editor_ArmElemPlateAdd_EditorClasses_Object_ArmElemPlateEditor_" data-uid="EditorClasses.Editor.ArmElemPlateAdd(EditorClasses.Object.ArmElemPlateEditor)">ArmElemPlateAdd(ArmElemPlateEditor)</h4>
+  <div class="markdown level1 summary"><p>Добавляет новую группу заданного армирования пластин.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void ArmElemPlateAdd(ArmElemPlateEditor armElemPlate)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="EditorClasses.Object.ArmElemPlateEditor.html">ArmElemPlateEditor</a></td>
+        <td><span class="parametername">armElemPlate</span></td>
+        <td><p>Объект арматуры в заданном армировании пластин</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="EditorClasses_Editor_ArmElemPlateDelete_" data-uid="EditorClasses.Editor.ArmElemPlateDelete*"></a>
+  <h4 id="EditorClasses_Editor_ArmElemPlateDelete_System_UInt32_" data-uid="EditorClasses.Editor.ArmElemPlateDelete(System.UInt32)">ArmElemPlateDelete(UInt32)</h4>
+  <div class="markdown level1 summary"><p>Удаление группы заданного армирования пластин.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void ArmElemPlateDelete(uint numArmElemPlate)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.UInt32</span></td>
+        <td><span class="parametername">numArmElemPlate</span></td>
+        <td><p>Номер группы заданного армирования пластин.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="EditorClasses_Editor_ArmElemRodAdd_" data-uid="EditorClasses.Editor.ArmElemRodAdd*"></a>
+  <h4 id="EditorClasses_Editor_ArmElemRodAdd_EditorClasses_Object_ArmElemRodEditor_" data-uid="EditorClasses.Editor.ArmElemRodAdd(EditorClasses.Object.ArmElemRodEditor)">ArmElemRodAdd(ArmElemRodEditor)</h4>
+  <div class="markdown level1 summary"><p>Добавляет новый тип заданного армирования стержней.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void ArmElemRodAdd(ArmElemRodEditor arm)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="EditorClasses.Object.ArmElemRodEditor.html">ArmElemRodEditor</a></td>
+        <td><span class="parametername">arm</span></td>
+        <td><p>Объект информации о заданных армированиях стержней</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="EditorClasses_Editor_ArmElemRodDelete_" data-uid="EditorClasses.Editor.ArmElemRodDelete*"></a>
+  <h4 id="EditorClasses_Editor_ArmElemRodDelete_System_UInt32_" data-uid="EditorClasses.Editor.ArmElemRodDelete(System.UInt32)">ArmElemRodDelete(UInt32)</h4>
+  <div class="markdown level1 summary"><p>Удаление участка армирования стержня</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void ArmElemRodDelete(uint numArmElemRod)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.UInt32</span></td>
+        <td><span class="parametername">numArmElemRod</span></td>
+        <td><p>Номер типа заданного армирования стержней.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="EditorClasses_Editor_ArmElemRodPartAdd_" data-uid="EditorClasses.Editor.ArmElemRodPartAdd*"></a>
+  <h4 id="EditorClasses_Editor_ArmElemRodPartAdd_System_UInt32_EditorClasses_Object_ArmElemRodPartEditor_" data-uid="EditorClasses.Editor.ArmElemRodPartAdd(System.UInt32,EditorClasses.Object.ArmElemRodPartEditor)">ArmElemRodPartAdd(UInt32, ArmElemRodPartEditor)</h4>
+  <div class="markdown level1 summary"><p>Добавляет новый участок армирования, для типа заданного армирования стержней с номером NumArmElemRod.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void ArmElemRodPartAdd(uint numArmElemRod, ArmElemRodPartEditor armElemRodPart)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.UInt32</span></td>
+        <td><span class="parametername">numArmElemRod</span></td>
+        <td><p>Номер типа заданного армирования стержней.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="EditorClasses.Object.ArmElemRodPartEditor.html">ArmElemRodPartEditor</a></td>
+        <td><span class="parametername">armElemRodPart</span></td>
+        <td><p>Объект арматуры в заданном армировании стержней</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="EditorClasses_Editor_BedAdd_" data-uid="EditorClasses.Editor.BedAdd*"></a>
+  <h4 id="EditorClasses_Editor_BedAdd_EditorClasses_Object_BedEditor_" data-uid="EditorClasses.Editor.BedAdd(EditorClasses.Object.BedEditor)">BedAdd(BedEditor)</h4>
+  <div class="markdown level1 summary"><p>Добавляет новый тип упругого основания.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void BedAdd(BedEditor bed)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="EditorClasses.Object.BedEditor.html">BedEditor</a></td>
+        <td><span class="parametername">bed</span></td>
+        <td><p>Объект упругого основания</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="EditorClasses_Editor_BedCompress_" data-uid="EditorClasses.Editor.BedCompress*"></a>
+  <h4 id="EditorClasses_Editor_BedCompress" data-uid="EditorClasses.Editor.BedCompress">BedCompress()</h4>
+  <div class="markdown level1 summary"><p>Удаление дублирующихся коэффициентов упруругого основания.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void BedCompress()</code></pre>
+  </div>
+  
+  
+  <a id="EditorClasses_Editor_BedDelete_" data-uid="EditorClasses.Editor.BedDelete*"></a>
+  <h4 id="EditorClasses_Editor_BedDelete_System_UInt32_" data-uid="EditorClasses.Editor.BedDelete(System.UInt32)">BedDelete(UInt32)</h4>
+  <div class="markdown level1 summary"><p>Удаляет тип упругого основания.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void BedDelete(uint numBed)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.UInt32</span></td>
+        <td><span class="parametername">numBed</span></td>
+        <td><p>Номер типа упругого основания.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="EditorClasses_Editor_BlockAdd_" data-uid="EditorClasses.Editor.BlockAdd*"></a>
+  <h4 id="EditorClasses_Editor_BlockAdd" data-uid="EditorClasses.Editor.BlockAdd">BlockAdd()</h4>
+  <div class="markdown level1 summary"><p>Добавляет блок (Форум).</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public uint BlockAdd()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.UInt32</span></td>
+        <td><p>Номер добавленного блока</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="EditorClasses_Editor_BlockDelete_" data-uid="EditorClasses.Editor.BlockDelete*"></a>
+  <h4 id="EditorClasses_Editor_BlockDelete_System_UInt32_" data-uid="EditorClasses.Editor.BlockDelete(System.UInt32)">BlockDelete(UInt32)</h4>
+  <div class="markdown level1 summary"><p>Удаление блока. Элементы, входящие в блок, не удаляются.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void BlockDelete(uint numBlock)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.UInt32</span></td>
+        <td><span class="parametername">numBlock</span></td>
+        <td><p>Номер блока.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="EditorClasses_Editor_BlockUpdate_" data-uid="EditorClasses.Editor.BlockUpdate*"></a>
+  <h4 id="EditorClasses_Editor_BlockUpdate_System_UInt32_EditorClasses_Object_BlockEditor_" data-uid="EditorClasses.Editor.BlockUpdate(System.UInt32,EditorClasses.Object.BlockEditor)">BlockUpdate(UInt32, BlockEditor)</h4>
+  <div class="markdown level1 summary"><p>Обновления информации блока</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void BlockUpdate(uint numBlock, BlockEditor block)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.UInt32</span></td>
+        <td><span class="parametername">numBlock</span></td>
+        <td><p>Номер блока.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="EditorClasses.Object.BlockEditor.html">BlockEditor</a></td>
+        <td><span class="parametername">block</span></td>
+        <td><p>Объект блока</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="EditorClasses_Editor_CombinationAdd_" data-uid="EditorClasses.Editor.CombinationAdd*"></a>
+  <h4 id="EditorClasses_Editor_CombinationAdd_EditorClasses_Object_CombinationEditor_" data-uid="EditorClasses.Editor.CombinationAdd(EditorClasses.Object.CombinationEditor)">CombinationAdd(CombinationEditor)</h4>
+  <div class="markdown level1 summary"><p>Добавляет новую комбинацию загружений.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void CombinationAdd(CombinationEditor combination)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="EditorClasses.Object.CombinationEditor.html">CombinationEditor</a></td>
+        <td><span class="parametername">combination</span></td>
+        <td><p>Объект комбинации загружений</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="EditorClasses_Editor_CombinationClearAll_" data-uid="EditorClasses.Editor.CombinationClearAll*"></a>
+  <h4 id="EditorClasses_Editor_CombinationClearAll" data-uid="EditorClasses.Editor.CombinationClearAll">CombinationClearAll()</h4>
+  <div class="markdown level1 summary"><p>Удаляет все комбинации загружений.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void CombinationClearAll()</code></pre>
+  </div>
+  
+  
+  <a id="EditorClasses_Editor_ConcreteElemAdd_" data-uid="EditorClasses.Editor.ConcreteElemAdd*"></a>
+  <h4 id="EditorClasses_Editor_ConcreteElemAdd_EditorClasses_Object_ConcreteElemEditor_" data-uid="EditorClasses.Editor.ConcreteElemAdd(EditorClasses.Object.ConcreteElemEditor)">ConcreteElemAdd(ConcreteElemEditor)</h4>
+  <div class="markdown level1 summary"><p>Добавляет новую группу конструктивных железобетонных элементов.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void ConcreteElemAdd(ConcreteElemEditor concreteElem)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="EditorClasses.Object.ConcreteElemEditor.html">ConcreteElemEditor</a></td>
+        <td><span class="parametername">concreteElem</span></td>
+        <td><p>Объект группы железобетонных конструктивных элементов.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="EditorClasses_Editor_ConcreteElemClearAll_" data-uid="EditorClasses.Editor.ConcreteElemClearAll*"></a>
+  <h4 id="EditorClasses_Editor_ConcreteElemClearAll" data-uid="EditorClasses.Editor.ConcreteElemClearAll">ConcreteElemClearAll()</h4>
+  <div class="markdown level1 summary"><p>Удаляет все группы конструктивных железобетонных элементов.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void ConcreteElemClearAll()</code></pre>
+  </div>
+  
+  
+  <a id="EditorClasses_Editor_ConcreteElemDelete_" data-uid="EditorClasses.Editor.ConcreteElemDelete*"></a>
+  <h4 id="EditorClasses_Editor_ConcreteElemDelete_System_UInt32_" data-uid="EditorClasses.Editor.ConcreteElemDelete(System.UInt32)">ConcreteElemDelete(UInt32)</h4>
+  <div class="markdown level1 summary"><p>Удаление группы конструктивных железобетонных элементов.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void ConcreteElemDelete(uint numConcreteElem)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.UInt32</span></td>
+        <td><span class="parametername">numConcreteElem</span></td>
+        <td><p>Номер группы конструктивных железобетонных элементов.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="EditorClasses_Editor_ConcreteElemUpdate_" data-uid="EditorClasses.Editor.ConcreteElemUpdate*"></a>
+  <h4 id="EditorClasses_Editor_ConcreteElemUpdate_System_UInt32_EditorClasses_Object_ConcreteElemEditor_" data-uid="EditorClasses.Editor.ConcreteElemUpdate(System.UInt32,EditorClasses.Object.ConcreteElemEditor)">ConcreteElemUpdate(UInt32, ConcreteElemEditor)</h4>
+  <div class="markdown level1 summary"><p>Обновление группы конструктивных железобетонных элементов.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void ConcreteElemUpdate(uint numConcreteElem, ConcreteElemEditor concreteElem)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.UInt32</span></td>
+        <td><span class="parametername">numConcreteElem</span></td>
+        <td><p>Номер группы конструктивных железобетонных элементов.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="EditorClasses.Object.ConcreteElemEditor.html">ConcreteElemEditor</a></td>
+        <td><span class="parametername">concreteElem</span></td>
+        <td><p>Объект группы железобетонных конструктивных элементов</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="EditorClasses_Editor_DOFUnionAdd_" data-uid="EditorClasses.Editor.DOFUnionAdd*"></a>
+  <h4 id="EditorClasses_Editor_DOFUnionAdd_EditorClasses_Object_DOFUnionEditor_" data-uid="EditorClasses.Editor.DOFUnionAdd(EditorClasses.Object.DOFUnionEditor)">DOFUnionAdd(DOFUnionEditor)</h4>
+  <div class="markdown level1 summary"><p>Добавляет группу объединений перемещений.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void DOFUnionAdd(DOFUnionEditor dofUnion)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="EditorClasses.Object.DOFUnionEditor.html">DOFUnionEditor</a></td>
+        <td><span class="parametername">dofUnion</span></td>
+        <td><p>Объект объединения перемещения узлов</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="EditorClasses_Editor_DOFUnionDelete_" data-uid="EditorClasses.Editor.DOFUnionDelete*"></a>
+  <h4 id="EditorClasses_Editor_DOFUnionDelete_System_UInt32_" data-uid="EditorClasses.Editor.DOFUnionDelete(System.UInt32)">DOFUnionDelete(UInt32)</h4>
+  <div class="markdown level1 summary"><p>Удаляет группу объединений перемещений.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void DOFUnionDelete(uint numDOFUnion)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.UInt32</span></td>
+        <td><span class="parametername">numDOFUnion</span></td>
+        <td><p>Номер группы объединений перемещений.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="EditorClasses_Editor_ElemAdd_" data-uid="EditorClasses.Editor.ElemAdd*"></a>
+  <h4 id="EditorClasses_Editor_ElemAdd_System_UInt32_" data-uid="EditorClasses.Editor.ElemAdd(System.UInt32)">ElemAdd(UInt32)</h4>
+  <div class="markdown level1 summary"><p>Создание элемента</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public uint ElemAdd(uint quantityElem)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.UInt32</span></td>
+        <td><span class="parametername">quantityElem</span></td>
+        <td><p>Количество добавляемых элементов.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.UInt32</span></td>
+        <td><p>Номер первого из добавленных элементов.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="EditorClasses_Editor_ElemDelete_" data-uid="EditorClasses.Editor.ElemDelete*"></a>
+  <h4 id="EditorClasses_Editor_ElemDelete_System_UInt32_System_Boolean_" data-uid="EditorClasses.Editor.ElemDelete(System.UInt32,System.Boolean)">ElemDelete(UInt32, Boolean)</h4>
+  <div class="markdown level1 summary"><p>Удалкение элемента</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void ElemDelete(uint numElem, bool bDeleteNode)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.UInt32</span></td>
+        <td><span class="parametername">numElem</span></td>
+        <td><p>Номер элемента.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><span class="parametername">bDeleteNode</span></td>
+        <td><p>Если true, то удаляются все узлы элемента, при условии, что они не принадлежат другим, неудаленным, элементам.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="EditorClasses_Editor_ElemUnDelete_" data-uid="EditorClasses.Editor.ElemUnDelete*"></a>
+  <h4 id="EditorClasses_Editor_ElemUnDelete_System_UInt32_" data-uid="EditorClasses.Editor.ElemUnDelete(System.UInt32)">ElemUnDelete(UInt32)</h4>
+  <div class="markdown level1 summary"><p>Восстанавливает ранее удаленный элемент.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void ElemUnDelete(uint numElem)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.UInt32</span></td>
+        <td><span class="parametername">numElem</span></td>
+        <td><p>Номер элемента.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="EditorClasses_Editor_ElemUpdate_" data-uid="EditorClasses.Editor.ElemUpdate*"></a>
+  <h4 id="EditorClasses_Editor_ElemUpdate_System_UInt32_EditorClasses_Object_ElemEditor_" data-uid="EditorClasses.Editor.ElemUpdate(System.UInt32,EditorClasses.Object.ElemEditor)">ElemUpdate(UInt32, ElemEditor)</h4>
+  <div class="markdown level1 summary"><p>Обновляет элемент</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void ElemUpdate(uint numElem, ElemEditor elem)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.UInt32</span></td>
+        <td><span class="parametername">numElem</span></td>
+        <td><p>Номер элемента.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="EditorClasses.Object.ElemEditor.html">ElemEditor</a></td>
+        <td><span class="parametername">elem</span></td>
+        <td><p>Объект элемента</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="EditorClasses_Editor_GroupElemAdd_" data-uid="EditorClasses.Editor.GroupElemAdd*"></a>
+  <h4 id="EditorClasses_Editor_GroupElemAdd" data-uid="EditorClasses.Editor.GroupElemAdd">GroupElemAdd()</h4>
+  <div class="markdown level1 summary"><p>Добавляет группу элементов </p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public uint GroupElemAdd()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.UInt32</span></td>
+        <td><p>Возвращаемое значение: номер добавленной группы элементов.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="EditorClasses_Editor_GroupElemAdd_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>Подразумевается группа общего назначения</p>
+</div>
+  
+  
+  <a id="EditorClasses_Editor_GroupElemDelete_" data-uid="EditorClasses.Editor.GroupElemDelete*"></a>
+  <h4 id="EditorClasses_Editor_GroupElemDelete_System_UInt32_" data-uid="EditorClasses.Editor.GroupElemDelete(System.UInt32)">GroupElemDelete(UInt32)</h4>
+  <div class="markdown level1 summary"><p>Удаляет группу элементов </p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void GroupElemDelete(uint numGroupElem)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.UInt32</span></td>
+        <td><span class="parametername">numGroupElem</span></td>
+        <td><p>Номер группы элементов.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="EditorClasses_Editor_GroupElemDelete_System_UInt32__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>Подразумевается группа общего назначения.
+Элементы, входящие в группу, не удаляются.</p>
+</div>
+  
+  
+  <a id="EditorClasses_Editor_GroupElemUpdate_" data-uid="EditorClasses.Editor.GroupElemUpdate*"></a>
+  <h4 id="EditorClasses_Editor_GroupElemUpdate_System_UInt32_EditorClasses_Object_GroupElemEditor_" data-uid="EditorClasses.Editor.GroupElemUpdate(System.UInt32,EditorClasses.Object.GroupElemEditor)">GroupElemUpdate(UInt32, GroupElemEditor)</h4>
+  <div class="markdown level1 summary"><p>Обновляет информацию о группе элементов</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void GroupElemUpdate(uint numGroupElem, GroupElemEditor groupElem)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.UInt32</span></td>
+        <td><span class="parametername">numGroupElem</span></td>
+        <td><p>Номер группы элементов.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="EditorClasses.Object.GroupElemEditor.html">GroupElemEditor</a></td>
+        <td><span class="parametername">groupElem</span></td>
+        <td><p>Объект группы элементов</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="EditorClasses_Editor_GroupNodeAdd_" data-uid="EditorClasses.Editor.GroupNodeAdd*"></a>
+  <h4 id="EditorClasses_Editor_GroupNodeAdd" data-uid="EditorClasses.Editor.GroupNodeAdd">GroupNodeAdd()</h4>
+  <div class="markdown level1 summary"><p>Добавляет группу узлов.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public uint GroupNodeAdd()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.UInt32</span></td>
+        <td><p>Возвращаемое значение: номер добавленной группы узлов.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="EditorClasses_Editor_GroupNodeDelete_" data-uid="EditorClasses.Editor.GroupNodeDelete*"></a>
+  <h4 id="EditorClasses_Editor_GroupNodeDelete_System_UInt32_" data-uid="EditorClasses.Editor.GroupNodeDelete(System.UInt32)">GroupNodeDelete(UInt32)</h4>
+  <div class="markdown level1 summary"><p>Удаляет группу элементов </p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void GroupNodeDelete(uint numGroupNode)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.UInt32</span></td>
+        <td><span class="parametername">numGroupNode</span></td>
+        <td><p>Номер группы элементов.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="EditorClasses_Editor_GroupNodeDelete_System_UInt32__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>Подразумевается группа общего назначения.
+Узлы, входящие в группу, не удаляются</p>
+</div>
+  
+  
+  <a id="EditorClasses_Editor_GroupNodeUpdate_" data-uid="EditorClasses.Editor.GroupNodeUpdate*"></a>
+  <h4 id="EditorClasses_Editor_GroupNodeUpdate_System_UInt32_EditorClasses_Object_GroupNodeEditor_" data-uid="EditorClasses.Editor.GroupNodeUpdate(System.UInt32,EditorClasses.Object.GroupNodeEditor)">GroupNodeUpdate(UInt32, GroupNodeEditor)</h4>
+  <div class="markdown level1 summary"><p>Обновляет информацию о группе узлов</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void GroupNodeUpdate(uint numGroupNode, GroupNodeEditor groupNode)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.UInt32</span></td>
+        <td><span class="parametername">numGroupNode</span></td>
+        <td><p>Номер группы узлов</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="EditorClasses.Object.GroupNodeEditor.html">GroupNodeEditor</a></td>
+        <td><span class="parametername">groupNode</span></td>
+        <td><p>Объект группы узлов</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="EditorClasses_Editor_InsertAdd_" data-uid="EditorClasses.Editor.InsertAdd*"></a>
+  <h4 id="EditorClasses_Editor_InsertAdd_EditorClasses_Object_InsertEditor_" data-uid="EditorClasses.Editor.InsertAdd(EditorClasses.Object.InsertEditor)">InsertAdd(InsertEditor)</h4>
+  <div class="markdown level1 summary"><p>Добавляет новый тип жестких вставок.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void InsertAdd(InsertEditor insert)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="EditorClasses.Object.InsertEditor.html">InsertEditor</a></td>
+        <td><span class="parametername">insert</span></td>
+        <td><p>Объект жесткой вставки</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="EditorClasses_Editor_InsertDelete_" data-uid="EditorClasses.Editor.InsertDelete*"></a>
+  <h4 id="EditorClasses_Editor_InsertDelete_System_UInt32_" data-uid="EditorClasses.Editor.InsertDelete(System.UInt32)">InsertDelete(UInt32)</h4>
+  <div class="markdown level1 summary"><p>Удаление жесткой вставки</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void InsertDelete(uint numInsert)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.UInt32</span></td>
+        <td><span class="parametername">numInsert</span></td>
+        <td><p>Номер типа жестких вставок.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="EditorClasses_Editor_JointDelete_" data-uid="EditorClasses.Editor.JointDelete*"></a>
+  <h4 id="EditorClasses_Editor_JointDelete_System_UInt32_System_UInt32_" data-uid="EditorClasses.Editor.JointDelete(System.UInt32,System.UInt32)">JointDelete(UInt32, UInt32)</h4>
+  <div class="markdown level1 summary"><p>Удаляет информацию о шарнирах в узле элемента.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void JointDelete(uint numElem, uint numNodeElem)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.UInt32</span></td>
+        <td><span class="parametername">numElem</span></td>
+        <td><p>Номер элемента.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.UInt32</span></td>
+        <td><span class="parametername">numNodeElem</span></td>
+        <td><p>Номер узла в элементе (1 или 2).</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="EditorClasses_Editor_JointSet_" data-uid="EditorClasses.Editor.JointSet*"></a>
+  <h4 id="EditorClasses_Editor_JointSet_System_UInt32_System_UInt32_EditorClasses_Object_JointEditor_" data-uid="EditorClasses.Editor.JointSet(System.UInt32,System.UInt32,EditorClasses.Object.JointEditor)">JointSet(UInt32, UInt32, JointEditor)</h4>
+  <div class="markdown level1 summary"><p>Устанавливает информацию о шарнирах в узле элемента.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void JointSet(uint numElem, uint NumNodeElem, JointEditor joint)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.UInt32</span></td>
+        <td><span class="parametername">numElem</span></td>
+        <td><p>Номер элемента.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.UInt32</span></td>
+        <td><span class="parametername">NumNodeElem</span></td>
+        <td><p>Номер узла в элементе ([1, 2]).</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="EditorClasses.Object.JointEditor.html">JointEditor</a></td>
+        <td><span class="parametername">joint</span></td>
+        <td><p>Объект шарнира элемента</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="EditorClasses_Editor_LoadingAdd_" data-uid="EditorClasses.Editor.LoadingAdd*"></a>
+  <h4 id="EditorClasses_Editor_LoadingAdd_System_UInt32_" data-uid="EditorClasses.Editor.LoadingAdd(System.UInt32)">LoadingAdd(UInt32)</h4>
+  <div class="markdown level1 summary"><p>Добавляет номер загружения</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public uint LoadingAdd(uint quantityLoading)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.UInt32</span></td>
+        <td><span class="parametername">quantityLoading</span></td>
+        <td><p>Количество добавляемых загружений.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.UInt32</span></td>
+        <td><p>Номер первого из добавленных загружений</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="EditorClasses_Editor_LoadingClear_" data-uid="EditorClasses.Editor.LoadingClear*"></a>
+  <h4 id="EditorClasses_Editor_LoadingClear_System_UInt32_" data-uid="EditorClasses.Editor.LoadingClear(System.UInt32)">LoadingClear(UInt32)</h4>
+  <div class="markdown level1 summary"><p>Удаление всех характеристик и нагрузок загружения.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void LoadingClear(uint numLoading)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.UInt32</span></td>
+        <td><span class="parametername">numLoading</span></td>
+        <td><p>Номер загружения.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="EditorClasses_Editor_LoadingClearAll_" data-uid="EditorClasses.Editor.LoadingClearAll*"></a>
+  <h4 id="EditorClasses_Editor_LoadingClearAll" data-uid="EditorClasses.Editor.LoadingClearAll">LoadingClearAll()</h4>
+  <div class="markdown level1 summary"><p>Удаление всех загружений.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void LoadingClearAll()</code></pre>
+  </div>
+  
+  
+  <a id="EditorClasses_Editor_LoadingForceElemAdd_" data-uid="EditorClasses.Editor.LoadingForceElemAdd*"></a>
+  <h4 id="EditorClasses_Editor_LoadingForceElemAdd_System_UInt32_EditorClasses_Object_ForceElemEditor_" data-uid="EditorClasses.Editor.LoadingForceElemAdd(System.UInt32,EditorClasses.Object.ForceElemEditor)">LoadingForceElemAdd(UInt32, ForceElemEditor)</h4>
+  <div class="markdown level1 summary"><p>Задание нагрузки на элемент</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void LoadingForceElemAdd(uint numLoading, ForceElemEditor forceElem)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.UInt32</span></td>
+        <td><span class="parametername">numLoading</span></td>
+        <td><p>Номер загружения.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="EditorClasses.Object.ForceElemEditor.html">ForceElemEditor</a></td>
+        <td><span class="parametername">forceElem</span></td>
+        <td><p>Объект нагрузки на элемент </p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="EditorClasses_Editor_LoadingForceElemDelete_" data-uid="EditorClasses.Editor.LoadingForceElemDelete*"></a>
+  <h4 id="EditorClasses_Editor_LoadingForceElemDelete_System_UInt32_EditorClasses_Object_ForceElemEditor_" data-uid="EditorClasses.Editor.LoadingForceElemDelete(System.UInt32,EditorClasses.Object.ForceElemEditor)">LoadingForceElemDelete(UInt32, ForceElemEditor)</h4>
+  <div class="markdown level1 summary"><p>Удаление нагрузки с елемента</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void LoadingForceElemDelete(uint numLoading, ForceElemEditor forceElem)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.UInt32</span></td>
+        <td><span class="parametername">numLoading</span></td>
+        <td><p>Номер загружения.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="EditorClasses.Object.ForceElemEditor.html">ForceElemEditor</a></td>
+        <td><span class="parametername">forceElem</span></td>
+        <td><p>Объект нагрузки на элемент(обрабатывается только свойство ListElem</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="EditorClasses_Editor_LoadingForceNodeAdd_" data-uid="EditorClasses.Editor.LoadingForceNodeAdd*"></a>
+  <h4 id="EditorClasses_Editor_LoadingForceNodeAdd_System_UInt32_EditorClasses_Object_ForceNodeEditor_" data-uid="EditorClasses.Editor.LoadingForceNodeAdd(System.UInt32,EditorClasses.Object.ForceNodeEditor)">LoadingForceNodeAdd(UInt32, ForceNodeEditor)</h4>
+  <div class="markdown level1 summary"><p>Задание нагрузки на узел</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void LoadingForceNodeAdd(uint numLoading, ForceNodeEditor forceNode)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.UInt32</span></td>
+        <td><span class="parametername">numLoading</span></td>
+        <td><p>Номер загружения.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="EditorClasses.Object.ForceNodeEditor.html">ForceNodeEditor</a></td>
+        <td><span class="parametername">forceNode</span></td>
+        <td><p>Объект нагрузки на узел</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="EditorClasses_Editor_LoadingForceNodeDelete_" data-uid="EditorClasses.Editor.LoadingForceNodeDelete*"></a>
+  <h4 id="EditorClasses_Editor_LoadingForceNodeDelete_System_UInt32_EditorClasses_Object_ForceNodeEditor_" data-uid="EditorClasses.Editor.LoadingForceNodeDelete(System.UInt32,EditorClasses.Object.ForceNodeEditor)">LoadingForceNodeDelete(UInt32, ForceNodeEditor)</h4>
+  <div class="markdown level1 summary"><p>Удаление нагрузки с узла</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void LoadingForceNodeDelete(uint numLoading, ForceNodeEditor forceNode)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.UInt32</span></td>
+        <td><span class="parametername">numLoading</span></td>
+        <td><p>Номер загружения</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="EditorClasses.Object.ForceNodeEditor.html">ForceNodeEditor</a></td>
+        <td><span class="parametername">forceNode</span></td>
+        <td><p>Объект нагрузки на узел (обрабатывается только свойство ListNode)</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="EditorClasses_Editor_LoadingSetDescription_" data-uid="EditorClasses.Editor.LoadingSetDescription*"></a>
+  <h4 id="EditorClasses_Editor_LoadingSetDescription_System_UInt32_System_String_" data-uid="EditorClasses.Editor.LoadingSetDescription(System.UInt32,System.String)">LoadingSetDescription(UInt32, String)</h4>
+  <div class="markdown level1 summary"><p>Устанавливает характеристики загружения.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void LoadingSetDescription(uint numLoading, string description)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.UInt32</span></td>
+        <td><span class="parametername">numLoading</span></td>
+        <td><p>Номер загружения.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">description</span></td>
+        <td><p>Характеристики загружения (см. главу Язык архивации данных общей документации)</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="EditorClasses_Editor_LoadingSetDescription_System_UInt32_System_String__examples">Examples</h5>
+  <pre><code>var nameLoad = &quot;Нагрузка_на_Пластины&quot;; //в имени пробелы надо заменять на _
+var type = 0;
+var mode = 5;
+var longTime = 0.35;
+var reliabilityFactor = 1.1;
+var Description = &quot;Name=&quot; + nameLoad + &quot; Type=&quot; + type + &quot; Mode=&quot; + mode + &quot; LongTime=&quot; + longTime + &quot; ReliabilityFactor=&quot; + reliabilityFactor;
+
+Editor.LoadingSetDescription(1, Description);</code></pre>
+
+  
+  
+  <a id="EditorClasses_Editor_LoadingSetMass_" data-uid="EditorClasses.Editor.LoadingSetMass*"></a>
+  <h4 id="EditorClasses_Editor_LoadingSetMass_System_UInt32_EditorClasses_Object_MassEditor_" data-uid="EditorClasses.Editor.LoadingSetMass(System.UInt32,EditorClasses.Object.MassEditor)">LoadingSetMass(UInt32, MassEditor)</h4>
+  <div class="markdown level1 summary"><p>Устанавливает преобразование статических загружений в массы.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void LoadingSetMass(uint numLoading, MassEditor mass)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.UInt32</span></td>
+        <td><span class="parametername">numLoading</span></td>
+        <td><p>Номер загружения.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="EditorClasses.Object.MassEditor.html">MassEditor</a></td>
+        <td><span class="parametername">mass</span></td>
+        <td><p>Преобразования статических загружений в массы.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="EditorClasses_Editor_LoadingSetWeight_" data-uid="EditorClasses.Editor.LoadingSetWeight*"></a>
+  <h4 id="EditorClasses_Editor_LoadingSetWeight_System_UInt32_System_Boolean_System_Boolean_EditorClasses_Object_WeightEditor_" data-uid="EditorClasses.Editor.LoadingSetWeight(System.UInt32,System.Boolean,System.Boolean,EditorClasses.Object.WeightEditor)">LoadingSetWeight(UInt32, Boolean, Boolean, WeightEditor)</h4>
+  <div class="markdown level1 summary"><p>Задает собственный вес.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void LoadingSetWeight(uint numLoading, bool bReplace, bool bInsert, WeightEditor weight)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.UInt32</span></td>
+        <td><span class="parametername">numLoading</span></td>
+        <td><p>Номер загружения.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><span class="parametername">bReplace</span></td>
+        <td><p>Если true, то предварительн</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><span class="parametername">bInsert</span></td>
+        <td><p>Если true, то собственный вес назначается, в том числе, на жесткие вставки.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="EditorClasses.Object.WeightEditor.html">WeightEditor</a></td>
+        <td><span class="parametername">weight</span></td>
+        <td><p>Объект собственного веса</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="EditorClasses_Editor_NodeAdd_" data-uid="EditorClasses.Editor.NodeAdd*"></a>
+  <h4 id="EditorClasses_Editor_NodeAdd_System_UInt32_" data-uid="EditorClasses.Editor.NodeAdd(System.UInt32)">NodeAdd(UInt32)</h4>
+  <div class="markdown level1 summary"><p>Создание узла</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public uint NodeAdd(uint quantityNode)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.UInt32</span></td>
+        <td><span class="parametername">quantityNode</span></td>
+        <td><p>Количество добавляемых узлов.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.UInt32</span></td>
+        <td><p>Номер первого из добавленных узлов.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="EditorClasses_Editor_NodeDelete_" data-uid="EditorClasses.Editor.NodeDelete*"></a>
+  <h4 id="EditorClasses_Editor_NodeDelete_System_UInt32_" data-uid="EditorClasses.Editor.NodeDelete(System.UInt32)">NodeDelete(UInt32)</h4>
+  <div class="markdown level1 summary"><p>Удаление узла</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void NodeDelete(uint numNode)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.UInt32</span></td>
+        <td><span class="parametername">numNode</span></td>
+        <td><p>Номер узла</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="EditorClasses_Editor_NodeUnDelete_" data-uid="EditorClasses.Editor.NodeUnDelete*"></a>
+  <h4 id="EditorClasses_Editor_NodeUnDelete_System_UInt32_" data-uid="EditorClasses.Editor.NodeUnDelete(System.UInt32)">NodeUnDelete(UInt32)</h4>
+  <div class="markdown level1 summary"><p>Восстанавливает ранее удаленный узел.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void NodeUnDelete(uint numNode)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.UInt32</span></td>
+        <td><span class="parametername">numNode</span></td>
+        <td><p>Номер узла</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="EditorClasses_Editor_NodeUpdate_" data-uid="EditorClasses.Editor.NodeUpdate*"></a>
+  <h4 id="EditorClasses_Editor_NodeUpdate_System_UInt32_EditorClasses_Object_NodeEditor_" data-uid="EditorClasses.Editor.NodeUpdate(System.UInt32,EditorClasses.Object.NodeEditor)">NodeUpdate(UInt32, NodeEditor)</h4>
+  <div class="markdown level1 summary"><p>Обновляет узел</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void NodeUpdate(uint numNode, NodeEditor node)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.UInt32</span></td>
+        <td><span class="parametername">numNode</span></td>
+        <td><p>Номер узла.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="EditorClasses.Object.NodeEditor.html">NodeEditor</a></td>
+        <td><span class="parametername">node</span></td>
+        <td><p>Объект узла</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="EditorClasses_Editor_RigidAdd_" data-uid="EditorClasses.Editor.RigidAdd*"></a>
+  <h4 id="EditorClasses_Editor_RigidAdd_EditorClasses_Object_RigidEditor_" data-uid="EditorClasses.Editor.RigidAdd(EditorClasses.Object.RigidEditor)">RigidAdd(RigidEditor)</h4>
+  <div class="markdown level1 summary"><p>Добавляет новый тип жесткости.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void RigidAdd(RigidEditor rigid)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="EditorClasses.Object.RigidEditor.html">RigidEditor</a></td>
+        <td><span class="parametername">rigid</span></td>
+        <td><p>Объект жестковсти</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="EditorClasses_Editor_RigidCompress_" data-uid="EditorClasses.Editor.RigidCompress*"></a>
+  <h4 id="EditorClasses_Editor_RigidCompress" data-uid="EditorClasses.Editor.RigidCompress">RigidCompress()</h4>
+  <div class="markdown level1 summary"><p>Удаление дублирующихся типов жесткости.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void RigidCompress()</code></pre>
+  </div>
+  
+  
+  <a id="EditorClasses_Editor_RigidUpdate_" data-uid="EditorClasses.Editor.RigidUpdate*"></a>
+  <h4 id="EditorClasses_Editor_RigidUpdate_System_UInt32_EditorClasses_Object_RigidEditor_" data-uid="EditorClasses.Editor.RigidUpdate(System.UInt32,EditorClasses.Object.RigidEditor)">RigidUpdate(UInt32, RigidEditor)</h4>
+  <div class="markdown level1 summary"><p>Обновление существующей жесткости</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void RigidUpdate(uint numRigid, RigidEditor rigid)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.UInt32</span></td>
+        <td><span class="parametername">numRigid</span></td>
+        <td><p>Номер типа жесткости.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="EditorClasses.Object.RigidEditor.html">RigidEditor</a></td>
+        <td><span class="parametername">rigid</span></td>
+        <td><p>Объект жестковсти</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="EditorClasses_Editor_RsuClearAll_" data-uid="EditorClasses.Editor.RsuClearAll*"></a>
+  <h4 id="EditorClasses_Editor_RsuClearAll" data-uid="EditorClasses.Editor.RsuClearAll">RsuClearAll()</h4>
+  <div class="markdown level1 summary"><p>Удаление ранее введенных данных о РСУ.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void RsuClearAll()</code></pre>
+  </div>
+  
+  
+  <a id="EditorClasses_Editor_RsuSet_" data-uid="EditorClasses.Editor.RsuSet*"></a>
+  <h4 id="EditorClasses_Editor_RsuSet" data-uid="EditorClasses.Editor.RsuSet">RsuSet()</h4>
+  <div class="markdown level1 summary"><p>Добавление или удаление строк расчетных сочетаний усилий по умолчанию в соответствии с числом загружений/комбинаций загружений.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void RsuSet()</code></pre>
+  </div>
+  
+  
+  <a id="EditorClasses_Editor_RsuSetIgnoreCombinations_" data-uid="EditorClasses.Editor.RsuSetIgnoreCombinations*"></a>
+  <h4 id="EditorClasses_Editor_RsuSetIgnoreCombinations_System_Boolean_" data-uid="EditorClasses.Editor.RsuSetIgnoreCombinations(System.Boolean)">RsuSetIgnoreCombinations(Boolean)</h4>
+  <div class="markdown level1 summary"><p>Учет комбинаций загружений в РСУ</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void RsuSetIgnoreCombinations(bool bIgnore)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><span class="parametername">bIgnore</span></td>
+        <td><p>Если true, то комбинации загружений будут учитываться в РСУ.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="EditorClasses_Editor_RsuSetStr_" data-uid="EditorClasses.Editor.RsuSetStr*"></a>
+  <h4 id="EditorClasses_Editor_RsuSetStr_System_UInt32_EditorClasses_Object_RsuStrEditor_" data-uid="EditorClasses.Editor.RsuSetStr(System.UInt32,EditorClasses.Object.RsuStrEditor)">RsuSetStr(UInt32, RsuStrEditor)</h4>
+  <div class="markdown level1 summary"><p>Задание информации строке РСУ</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void RsuSetStr(uint numRsuStr, RsuStrEditor rsuStr)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.UInt32</span></td>
+        <td><span class="parametername">numRsuStr</span></td>
+        <td><p>Номер строки РСУ.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="EditorClasses.Object.RsuStrEditor.html">RsuStrEditor</a></td>
+        <td><span class="parametername">rsuStr</span></td>
+        <td><p>Объект РСУ</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="EditorClasses_Editor_SetBound_" data-uid="EditorClasses.Editor.SetBound*"></a>
+  <h4 id="EditorClasses_Editor_SetBound_EditorClasses_Object_BoundEditor_System_Boolean_" data-uid="EditorClasses.Editor.SetBound(EditorClasses.Object.BoundEditor,System.Boolean)">SetBound(BoundEditor, Boolean)</h4>
+  <div class="markdown level1 summary"><p>Устанавливает связи в узлах.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetBound(BoundEditor bound, bool bReplace)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="EditorClasses.Object.BoundEditor.html">BoundEditor</a></td>
+        <td><span class="parametername">bound</span></td>
+        <td><p>Объект связи</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><span class="parametername">bReplace</span></td>
+        <td><p>Если true, то связи в узлах заменяются на новые, если false, то новые связи добавляются к уже существующим.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="EditorClasses_Editor_SetInfo_" data-uid="EditorClasses.Editor.SetInfo*"></a>
+  <h4 id="EditorClasses_Editor_SetInfo_EditorClasses_Object_InfoEditor_" data-uid="EditorClasses.Editor.SetInfo(EditorClasses.Object.InfoEditor)">SetInfo(InfoEditor)</h4>
+  <div class="markdown level1 summary"><p>Задает информацию о файле проекта</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetInfo(InfoEditor info)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="EditorClasses.Object.InfoEditor.html">InfoEditor</a></td>
+        <td><span class="parametername">info</span></td>
+        <td><p>Информация о файле проекта</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="EditorClasses_Editor_SteelElemAdd_" data-uid="EditorClasses.Editor.SteelElemAdd*"></a>
+  <h4 id="EditorClasses_Editor_SteelElemAdd_EditorClasses_Object_SteelElemEditor_" data-uid="EditorClasses.Editor.SteelElemAdd(EditorClasses.Object.SteelElemEditor)">SteelElemAdd(SteelElemEditor)</h4>
+  <div class="markdown level1 summary"><p>Добавляет новую группу конструктивных стальных элементов.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SteelElemAdd(SteelElemEditor steelElem)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="EditorClasses.Object.SteelElemEditor.html">SteelElemEditor</a></td>
+        <td><span class="parametername">steelElem</span></td>
+        <td><p>Объект групп стальных конструктивных элементов</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="EditorClasses_Editor_SteelElemClearAll_" data-uid="EditorClasses.Editor.SteelElemClearAll*"></a>
+  <h4 id="EditorClasses_Editor_SteelElemClearAll" data-uid="EditorClasses.Editor.SteelElemClearAll">SteelElemClearAll()</h4>
+  <div class="markdown level1 summary"><p>Удаляет все группы конструктивных стальных элементов.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SteelElemClearAll()</code></pre>
+  </div>
+  
+  
+  <a id="EditorClasses_Editor_SteelElemDelete_" data-uid="EditorClasses.Editor.SteelElemDelete*"></a>
+  <h4 id="EditorClasses_Editor_SteelElemDelete_System_UInt32_" data-uid="EditorClasses.Editor.SteelElemDelete(System.UInt32)">SteelElemDelete(UInt32)</h4>
+  <div class="markdown level1 summary"><p>Удаление группы конструктивных стальных элементов.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SteelElemDelete(uint numSteelElem)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.UInt32</span></td>
+        <td><span class="parametername">numSteelElem</span></td>
+        <td><p>Номер группы конструктивных стальных элементов.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="EditorClasses_Editor_SteelElemUpdate_" data-uid="EditorClasses.Editor.SteelElemUpdate*"></a>
+  <h4 id="EditorClasses_Editor_SteelElemUpdate_System_UInt32_EditorClasses_Object_SteelElemEditor_" data-uid="EditorClasses.Editor.SteelElemUpdate(System.UInt32,EditorClasses.Object.SteelElemEditor)">SteelElemUpdate(UInt32, SteelElemEditor)</h4>
+  <div class="markdown level1 summary"><p>Обновление группы конструктивных стальных элементов.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SteelElemUpdate(uint numSteelElem, SteelElemEditor steelElem)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.UInt32</span></td>
+        <td><span class="parametername">numSteelElem</span></td>
+        <td><p>Номер группы конструктивных стальных элементов.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="EditorClasses.Object.SteelElemEditor.html">SteelElemEditor</a></td>
+        <td><span class="parametername">steelElem</span></td>
+        <td><p>Объект групп стальных конструктивных элементов</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="EditorClasses_Editor_SystemCoordEffortsAdd_" data-uid="EditorClasses.Editor.SystemCoordEffortsAdd*"></a>
+  <h4 id="EditorClasses_Editor_SystemCoordEffortsAdd_EditorClasses_Object_SystemCoordEffortsEditor_" data-uid="EditorClasses.Editor.SystemCoordEffortsAdd(EditorClasses.Object.SystemCoordEffortsEditor)">SystemCoordEffortsAdd(SystemCoordEffortsEditor)</h4>
+  <div class="markdown level1 summary"><p>Добавляет новую систему координат элементов для вычисления напряжений в пластинах и объемных элементах.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SystemCoordEffortsAdd(SystemCoordEffortsEditor systemCoordEfforts)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="EditorClasses.Object.SystemCoordEffortsEditor.html">SystemCoordEffortsEditor</a></td>
+        <td><span class="parametername">systemCoordEfforts</span></td>
+        <td><p>Объект системы координат элементов для вычисления напряжений</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="EditorClasses_Editor_SystemCoordEffortsDelete_" data-uid="EditorClasses.Editor.SystemCoordEffortsDelete*"></a>
+  <h4 id="EditorClasses_Editor_SystemCoordEffortsDelete_System_UInt32_" data-uid="EditorClasses.Editor.SystemCoordEffortsDelete(System.UInt32)">SystemCoordEffortsDelete(UInt32)</h4>
+  <div class="markdown level1 summary"><p>Удаляет систему координат элементов для вычисления напряжений в пластинах и объемных элементах.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SystemCoordEffortsDelete(uint numSystemCoordEfforts)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.UInt32</span></td>
+        <td><span class="parametername">numSystemCoordEfforts</span></td>
+        <td><p>Номер системы координат элементов для вычисления напряжений в пластинах и объемных элементах.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="EditorClasses_Editor_SystemCoordElemAdd_" data-uid="EditorClasses.Editor.SystemCoordElemAdd*"></a>
+  <h4 id="EditorClasses_Editor_SystemCoordElemAdd_EditorClasses_Object_SystemCoordElemEditor_" data-uid="EditorClasses.Editor.SystemCoordElemAdd(EditorClasses.Object.SystemCoordElemEditor)">SystemCoordElemAdd(SystemCoordElemEditor)</h4>
+  <div class="markdown level1 summary"><p>Добавляет новую систему координат элементов.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SystemCoordElemAdd(SystemCoordElemEditor systemCoord)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="EditorClasses.Object.SystemCoordElemEditor.html">SystemCoordElemEditor</a></td>
+        <td><span class="parametername">systemCoord</span></td>
+        <td><p>Объект системы координат элемента</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="EditorClasses_Editor_SystemCoordElemDelete_" data-uid="EditorClasses.Editor.SystemCoordElemDelete*"></a>
+  <h4 id="EditorClasses_Editor_SystemCoordElemDelete_System_UInt32_" data-uid="EditorClasses.Editor.SystemCoordElemDelete(System.UInt32)">SystemCoordElemDelete(UInt32)</h4>
+  <div class="markdown level1 summary"><p>Удаляет систему координат элементов.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SystemCoordElemDelete(uint numSystemCoordElem)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.UInt32</span></td>
+        <td><span class="parametername">numSystemCoordElem</span></td>
+        <td><p>Номер системы координат элементов.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="EditorClasses_Editor_UnificationRsuAdd_" data-uid="EditorClasses.Editor.UnificationRsuAdd*"></a>
+  <h4 id="EditorClasses_Editor_UnificationRsuAdd_EditorClasses_Object_UnificationRsuEditor_" data-uid="EditorClasses.Editor.UnificationRsuAdd(EditorClasses.Object.UnificationRsuEditor)">UnificationRsuAdd(UnificationRsuEditor)</h4>
+  <div class="markdown level1 summary"><p>Задает информацию группы унификации РСУ</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void UnificationRsuAdd(UnificationRsuEditor unification)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="EditorClasses.Object.UnificationRsuEditor.html">UnificationRsuEditor</a></td>
+        <td><span class="parametername">unification</span></td>
+        <td><p>Объект унификаций РСУ</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="EditorClasses_Editor_UnificationRsuDelete_" data-uid="EditorClasses.Editor.UnificationRsuDelete*"></a>
+  <h4 id="EditorClasses_Editor_UnificationRsuDelete_System_UInt32_" data-uid="EditorClasses.Editor.UnificationRsuDelete(System.UInt32)">UnificationRsuDelete(UInt32)</h4>
+  <div class="markdown level1 summary"><p>Удаление группы унификации РСУ</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void UnificationRsuDelete(uint numUnificationRsu)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.UInt32</span></td>
+        <td><span class="parametername">numUnificationRsu</span></td>
+        <td><p>Номер группы унификации РСУ.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In This Article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

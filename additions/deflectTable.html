@@ -1,0 +1,286 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>&#1054;&#1075;&#1088;&#1072;&#1085;&#1080;&#1095;&#1077;&#1085;&#1080;&#1103; &#1087;&#1086; &#1087;&#1088;&#1086;&#1075;&#1080;&#1073;&#1072;&#1084; &#1080; &#1087;&#1077;&#1088;&#1077;&#1084;&#1077;&#1097;&#1077;&#1085;&#1080;&#1103;&#1084; </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="&#1054;&#1075;&#1088;&#1072;&#1085;&#1080;&#1095;&#1077;&#1085;&#1080;&#1103; &#1087;&#1086; &#1087;&#1088;&#1086;&#1075;&#1080;&#1073;&#1072;&#1084; &#1080; &#1087;&#1077;&#1088;&#1077;&#1084;&#1077;&#1097;&#1077;&#1085;&#1080;&#1103;&#1084; ">
+    <meta name="generator" content="docfx 2.59.0.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="">
+<h1 id="ограничения-по-прогибам-и-перемещениям">Ограничения по прогибам и перемещениям</h1>
+
+<p>Используется в следующих классах:</p>
+<ul>
+<li><code>SteelElemEditor</code></li>
+<li><code>SteelElemModel</code></li>
+<li><code>ConcreteElemEditor</code></li>
+<li><code>ConcreteElemModel</code>  </li>
+</ul>
+<p>Для учета ограничений по прогибам и перемещениям следует задавать следующие данные </p>
+<h3 id="при-расчетах-по-eurocode">При расчетах по Eurocode</h3>
+<table>
+<thead>
+<tr>
+<th></th>
+<th>Признак учета ограничений</th>
+<th>Относительное ограничение (в долях длины)</th>
+<th>Абсолютное ограничение</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Горизонтальный прогиб от  характеристических комбинаций</td>
+<td>DeflectECCheck[0]</td>
+<td>DeflectECLimit_L[0]</td>
+<td>DeflectECLimit_Abs[0]</td>
+</tr>
+<tr>
+<td>Горизонтальный прогиб от  квазипостоянных комбинаций</td>
+<td>DeflectECCheck[1]</td>
+<td>DeflectECLimit_L[1]</td>
+<td>DeflectECLimit_Abs[1]</td>
+</tr>
+<tr>
+<td>Горизонтальный прогиб от частых комбинаций</td>
+<td>DeflectECCheck[2]</td>
+<td>DeflectECLimit_L[2]</td>
+<td>DeflectECLimit_Abs[2]</td>
+</tr>
+<tr>
+<td>Вертикальный прогиб от характеристических комбинаций</td>
+<td>DeflectECCheck[3]</td>
+<td>DeflectECLimit_L[3]</td>
+<td>DeflectECLimit_Abs[3]</td>
+</tr>
+<tr>
+<td>Вертикальный прогиб от квазипостоянных комбинаций</td>
+<td>DeflectECCheck[4]</td>
+<td>DeflectECLimit_L[4]</td>
+<td>DeflectECLimit_Abs[4]</td>
+</tr>
+<tr>
+<td>Вертикальный прогиб от частых комбинаций</td>
+<td>DeflectECCheck[5]</td>
+<td>DeflectECLimit_L[5]</td>
+<td>DeflectECLimit_Abs[5]</td>
+</tr>
+<tr>
+<td>Горизонтальные перемещения от характеристических комбинаций</td>
+<td>DisplacementCheck[0]</td>
+<td>DisplacementLimit_L[0]</td>
+<td>DisplacementLimit_Abs[0]</td>
+</tr>
+<tr>
+<td>Горизонтальные перемещения от квазипостоянных комбинаций</td>
+<td>DisplacementCheck[1]</td>
+<td>DisplacementLimit_L[1]</td>
+<td>DisplacementLimit_Abs[1]</td>
+</tr>
+<tr>
+<td>Горизонтальные перемещения от частых комбинаций</td>
+<td>DisplacementCheck[2]</td>
+<td>DisplacementLimit_L[2]</td>
+<td>DisplacementLimit_Abs[2]</td>
+</tr>
+<tr>
+<td>Вертикальные перемещения от характеристических комбинаций</td>
+<td>DisplacementCheck[3]</td>
+<td>DisplacementLimit_L[3]</td>
+<td>DisplacementLimit_Abs[3]</td>
+</tr>
+<tr>
+<td>Вертикальные перемещения от квазипостоянных комбинаций</td>
+<td>DisplacementCheck[4]</td>
+<td>DisplacementLimit_L[4]</td>
+<td>DisplacementLimit_Abs[4]</td>
+</tr>
+<tr>
+<td>Вертикальные перемещения от частых комбинаций</td>
+<td>DisplacementCheck[5]</td>
+<td>DisplacementLimit_L[5]</td>
+<td>DisplacementLimit_Abs[5]</td>
+</tr>
+</tbody>
+</table>
+<h3 id="при-расчетах-по-снип-сп-дбн">При расчетах по СниП, СП, ДБН</h3>
+<table>
+<thead>
+<tr>
+<th></th>
+<th>Признак учета ограничений</th>
+<th>Относительное ограничение (в долях длины)</th>
+<th>Абсолютное ограничение</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Горизонтальный прогиб от всех нагрузок</td>
+<td>DeflectSNIPCheck[0]</td>
+<td>DeflectSNIPLimit_L[0]</td>
+<td>DeflectSNIPLimit_Abs[0]</td>
+</tr>
+<tr>
+<td>Горизонтальный прогиб от постоянных и длительных нагрузок</td>
+<td>DeflectSNIPCheck[4]</td>
+<td>DeflectSNIPLimit_L[4]</td>
+<td>DeflectSNIPLimit_Abs[4]</td>
+</tr>
+<tr>
+<td>Горизонтальный прогиб от временных нагрузок</td>
+<td>DeflectSNIPCheck[1]</td>
+<td>DeflectSNIPLimit_L[1]</td>
+<td>DeflectSNIPLimit_Abs[1]</td>
+</tr>
+<tr>
+<td>Вертикальный прогиб от всех нагрузок</td>
+<td>DeflectSNIPCheck[2]</td>
+<td>DeflectSNIPLimit_L[2]</td>
+<td>DeflectSNIPLimit_Abs[2]</td>
+</tr>
+<tr>
+<td>Вертикальный прогиб от постоянных и длительных нагрузок</td>
+<td>DeflectSNIPCheck[5]</td>
+<td>DeflectSNIPLimit_L[5]</td>
+<td>DeflectSNIPLimit_Abs[5]</td>
+</tr>
+<tr>
+<td>Вертикальный прогиб от временных нагрузок</td>
+<td>DeflectSNIPCheck[3]</td>
+<td>DeflectSNIPLimit_L[3]</td>
+<td>DeflectSNIPLimit_Abs[3]</td>
+</tr>
+<tr>
+<td>Вертикальные перемещения от всех нагрузок</td>
+<td>DisplacementCheck[8]</td>
+<td>DisplacementLimit_L[8]</td>
+<td>DisplacementLimit_Abs[8]</td>
+</tr>
+<tr>
+<td>Вертикальные перемещения от постоянных и длительных нагрузок</td>
+<td>DisplacementCheck[7]</td>
+<td>DisplacementLimit_L[7]</td>
+<td>DisplacementLimit_Abs[7]</td>
+</tr>
+<tr>
+<td>Вертикальные перемещения от временных нагрузок</td>
+<td>DisplacementCheck[9]</td>
+<td>DisplacementLimit_L[9]</td>
+<td>DisplacementLimit_Abs[9]</td>
+</tr>
+<tr>
+<td>Горизонтальные перемещения от всех нагрузок</td>
+<td>DisplacementCheck[6]</td>
+<td>DisplacementLimit_L[6]</td>
+<td>DisplacementLimit_Abs[6]</td>
+</tr>
+<tr>
+<td>Горизонтальные перемещения от постоянных и длительных нагрузок</td>
+<td>DisplacementSNIPCheckEx[0]</td>
+<td>DisplacementExSNIPLimit_L[0]</td>
+<td>DisplacementExSNIPLimit_Abs[0]</td>
+</tr>
+<tr>
+<td>Горизонтальные перемещения от временных нагрузок</td>
+<td>DisplacementSNIPCheckEx[1]</td>
+<td>DisplacementExSNIPLimit_L[1]</td>
+<td>DisplacementExSNIPLimit_Abs[1]</td>
+</tr>
+</tbody>
+</table>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In This Article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

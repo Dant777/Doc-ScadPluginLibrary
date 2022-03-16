@@ -1,0 +1,152 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>&#1053;&#1072;&#1075;&#1088;&#1091;&#1079;&#1082;&#1072; &#1085;&#1072; &#1087;&#1083;&#1072;&#1089;&#1090;&#1080;&#1085;&#1099; </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="&#1053;&#1072;&#1075;&#1088;&#1091;&#1079;&#1082;&#1072; &#1085;&#1072; &#1087;&#1083;&#1072;&#1089;&#1090;&#1080;&#1085;&#1099; ">
+    <meta name="generator" content="docfx 2.59.0.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="">
+<h1 id="нагрузка-на-пластины">Нагрузка на пластины</h1>
+
+<p>В примере представлено создание загружения на элементы (пластины)</p>
+<pre><code>public void AddLoad(dynamic engine)
+{
+    try
+    {
+
+        Engine engineSCAD = new Engine(engine);
+        Editor editor = engineSCAD.GetEditor();
+
+        //Задание трапециевидной нагрузки на стержень по общей системе  координат (пластины)
+        uint numLoad = editor.LoadingAdd(1);
+        ForceElemEditor forceElem = new ForceElemEditor
+        {
+            Qw = 17,
+            Qn = 3,
+            ListData = new object[] { 1000, 2000, 3000, 4000 },
+            ListElem = new object[] { 1, 2, 3 } //Номера пластин
+        };
+        editor.LoadingForceElemAdd(numLoad, forceElem);
+
+        //Запись загружения
+        var nameLoad = &quot;Нагрузка_на_Пластины&quot;; //в имени пробелы надо заменять на _
+        var type = 0;
+        var mode = 5;
+        var longTime = 0.35;
+        var reliabilityFactor = 1.1;
+        var Description = &quot;Name=&quot; + nameLoad + &quot; Type=&quot; + type + &quot; Mode=&quot; + mode + &quot; LongTime=&quot; + longTime + &quot; ReliabilityFactor=&quot; + reliabilityFactor;
+
+        editor.LoadingSetDescription(numLoad, Description);
+    }
+    finally
+    {
+        //Очистка объекта
+        Marshal.ReleaseComObject(engine);
+
+    }
+}
+</code></pre><blockquote><p>Значения необходимые вводить в <code>ForceElemEditor.Qw</code> описаны тут:</p>
+<ul>
+<li><a href="https://scadsoft.com/help/SCAD/ru/index.htm?#t=SCAD1049%2Fdocument_7.htm&amp;rhsearch=%D0%92%D0%B5%D0%BB%D0%B8%D1%87%D0%B8%D0%BD%D1%8B%20%D0%BD%D0%B0%D0%B3%D1%80%D1%83%D0%B7%D0%BE%D0%BA&amp;rhhlterm=%D0%92%D0%B5%D0%BB%D0%B8%D1%87%D0%B8%D0%BD%D1%8B%20%D0%BD%D0%B0%D0%B3%D1%80%D1%83%D0%B7%D0%BE%D0%BA&amp;rhsyns=%20">Информация о номерах видов загружений</a></li>
+<li><a href="https://scadsoft.com/help/SCAD/FEMLib/ru/index.htm#t=FEMLib1049_rtf%2Fload_rod_elements.htm">Информация о направлении в зависимости от вида загружения</a>  </li>
+</ul>
+<p>Значения необходимые вводить в <code>ForceElemEditor.Qn</code> см. Дополнении 1 в документации &quot;Пользовательские расширения&quot;, поставляется со SCAD++ </p>
+</blockquote>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In This Article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>
