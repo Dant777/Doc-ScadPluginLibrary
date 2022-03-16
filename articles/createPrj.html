@@ -104,23 +104,23 @@
 <blockquote><p>Если регистрация сборки будет производится из самой Visual Studio обязательно нужно запустить VS с <strong>правами администратора</strong></p>
 </blockquote>
 <p>Для начала  создадим новый проект библиотеки классов (Class Library) на основе .NET Framework  </p>
-<p><img src="./images/vsimg/vs_create_prj.png" alt="create"></p>
+<p><img src="../images/vsimg/vs_create_prj.png" alt="create"></p>
 <h3 id="настройка-проекта">Настройка проекта</h3>
 <p>1) <strong>Properties-&gt;Application-&gt;Assembly information</strong> тут включаем флажок <strong>Make assembly COM Visible</strong>  </p>
-<p><img src="./images/vsimg/prop_1.png" alt="prop1"></p>
+<p><img src="../images/vsimg/prop_1.png" alt="prop1"></p>
 <p>2) <strong>Properties -&gt;Build</strong> </p>
 <ul>
 <li>В <strong>Platform target</strong> необходимо выбрать разрядность системы/программы (в данном случае разрядность системы Windows x64)  </li>
 <li>В <strong>Output path</strong> стоит сразу выбрать где будет находится сборка (лучше использовать отдельную директорию для таких .dll или сразу использовать директорию пользовательских расширений SCAD++)</li>
 <li>При включении флажка <strong>Register for COM interop</strong> VS сама будет регистрировать выходную сборку по пути выбранном в <strong>Output path</strong>  </li>
 </ul>
-<p><img src="./images/vsimg/prop_2.png" alt="prop2"></p>
+<p><img src="../images/vsimg/prop_2.png" alt="prop2"></p>
 <blockquote><p>Для регистрации не через VS пункт 2 выполнять не нужно  </p>
 </blockquote>
 <p>3) <strong>Properties-&gt;Signing</strong> Для регистрации сборки в .NET Framework необходимо подписывать сборку </p>
-<p><img src="./images/vsimg/prop_3.png" alt="prop3"></p>
+<p><img src="../images/vsimg/prop_3.png" alt="prop3"></p>
 <p>4) Загружаем через NuGet Packages: <code>ScadPluginLibrary</code></p>
-<p><img src="./images/vsimg/prop_4.png" alt="prop4"></p>
+<p><img src="../images/vsimg/prop_4.png" alt="prop4"></p>
 <h3 id="создание-плагина-1">Создание плагина</h3>
 <p>Создаем класс, который будет являться точкой входа, <strong>TestClass</strong> он  наследует интерфейс <strong>ITest</strong>. Для каждого из них добавляем атрибуты как показано ниже </p>
 <pre><code>namespace SCAD_test
@@ -172,15 +172,15 @@
 </code></pre><p>Собираем проект</p>
 <h3 id="вызов-черз-scad">Вызов черз SCAD++</h3>
 <p>В папке пользовательских плагинов PreProcessor создадим новую директорию JScript плагина с нужными файлами (можно использовать директории и файлы примеров)</p>
-<p><img src="./images/vsimg/prop_5.png" alt="prop5"></p>
+<p><img src="../images/vsimg/prop_5.png" alt="prop5"></p>
 <p>В файле Plugin.js будет вызываться .NET сборка, следующим образом  </p>
-<p><img src="./images/vsimg/prop_6.png" alt="prop6"></p>
+<p><img src="../images/vsimg/prop_6.png" alt="prop6"></p>
 <pre><code>var scad_c = new ActiveXObject(&quot;ScadComVSRegTest.Lib&quot;);
 </code></pre><p>Вызывает сборку по имени <code>ScadComVSRegTest.Lib</code> (как указано в атрибуте <code>[ProgId(&quot;AnyName&quot;)]</code>)</p>
 <pre><code>scad_c.Run(engine);
 </code></pre><p>у сборки вызывается метод <code>Run</code> куда передаем основной объект SCADa <code>engine</code>, после чего происходит выполнение в SCAD++</p>
-<p><img src="./images/vsimg/prop_7.png" alt="prop7"></p>
-<p><img src="./images/vsimg/prop_8.png" alt="prop8"></p>
+<p><img src="../images/vsimg/prop_7.png" alt="prop7"></p>
+<p><img src="../images/vsimg/prop_8.png" alt="prop8"></p>
 </article>
           </div>
           
