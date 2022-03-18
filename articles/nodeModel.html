@@ -78,9 +78,9 @@
         Model model = engineSCAD.GetModel();
 
         //Получение информации
-        NodeModel elemModel = model.GetNode(1);
+        NodeModel nodeModel = model.GetNode(1);
         //Вывод информации
-        ScadDebug.PrintScadObjectAll(elemModel);
+        ScadDebug.PrintScadObjectAll(nodeModel);
     }
     finally
     {
